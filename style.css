@@ -21,25 +21,56 @@ body {
 
     height: 100vh;
     background-color: var(--bg-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 16px;
     font-family: var(--heading-font);
 
 
 }
 
+h1{
+
+    font-family: var(--heading-font);
+    line-height: 1.4em;
+    font-weight: 600;
+    font-size: 45px;
+    color: var(--white);
+
+}
+
+
+p{
+
+    line-height: 1.6em;
+    color: var(--white);
+
+}
+
+/* Navigation menu start from here  */
+
+
+
+
+
+
+/* .master-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} */
+
 .container {
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background-color: var(--black-color);
     color: #fff;
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    border-radius: 14px 14px 0px 0px;
+    border-radius: 0px 0px 14px 14px;
     padding: 18px;
     position: relative;
+    z-index: 1000;
 }
 
 .logo {
@@ -100,11 +131,13 @@ ul li {
 #dropMenu li{
 
     padding: 10px 15px;
+    margin-top: 10px;
 }
 
 #dropMenu li a {
 
     text-decoration: none;
+    color: var(--white);
   
 }
 
@@ -172,3 +205,49 @@ ul li {
 
     background-color: var(--btn-bg);
 }
+
+
+/* Navigatin menu ends here  */
+
+
+/* Hero banner start from here  */
+
+
+.hero-banner{
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    background-image:  url(/img/Future-Mobility-112.jpg) , linear-gradient(to right, rgb(0, 0, 0.5), rgb(0, 0, 0.5));
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.hero-banner .content{
+
+    width: 45%;
+    text-align: center;
+}
+
+.btn-hero{
+
+    background-color: var(--btn-bg);
+    margin-top: 12px;
+
+    border: none;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    
+}
+
+
+/* Hero banner ends here  */
+
+
+/* USP start from here  */
+
+
