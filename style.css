@@ -87,8 +87,9 @@ ul li{
     z-index: 999;
     background-color: var(--black-color);
     padding: 10px;
-    /* display: none; */
+    display: none;
 }
+
 
 .button-section{
 
@@ -106,6 +107,7 @@ ul li{
     color: var(--white);
     border-radius: 2px;
     cursor: pointer;
+    transition: all ease-in-out 250ms;
    
 }
 
@@ -114,7 +116,7 @@ ul li{
 
     background-color: var(--btn-bg);
    
-    transition: all ease-in-out 250ms;
+    
     border: none;
     box-sizing: border-box;
     border: 1px solid transparent;
