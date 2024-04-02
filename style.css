@@ -38,6 +38,16 @@ h1{
 
 }
 
+h2{
+
+    
+    font-family: var(--heading-font);
+    line-height: 1.4em;
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--white);
+}
+
 
 p{
 
@@ -65,8 +75,10 @@ p{
     justify-content: space-between;
     border-radius: 0px 0px 18px 18px;
     padding: 18px;
-    position: relative;
+    position: fixed;
+    top: 0;
     z-index: 1000;
+    
    
 }
 
@@ -292,4 +304,39 @@ ul li {
 .item i{
 
     color: var(--white);
+}
+
+
+/* text media section start from here  */
+.text-media {
+
+    display: flex;
+    width: 70%;
+    margin: 60px auto;
+  
+}
+
+.media{
+
+    width: 50%;
+    
+}
+
+.text{
+
+    width: 50%;
+    padding: 30px 40px;
+}
+
+
+.text-media .media img{
+
+
+    width: 100%;
+
+}
+
+.margin-20{
+
+    margin-top: 20px;
 }
