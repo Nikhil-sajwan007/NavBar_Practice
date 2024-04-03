@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="/main.js"></script>
     <script src="https://kit.fontawesome.com/8a0ee9b181.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <title>NavBar</title>
 
 </head>
@@ -18,8 +20,9 @@
     <div class="container">
 
 
+
         <div class="logo">NavBar</div>
-        <div class="menu-list">
+        <div class="menu-list" id="menuList">
 
             <ul>
 
@@ -49,6 +52,24 @@
 
             <button class="btn-1 btn">Login</button>
             <button class="btn-2 btn">Sign Up</button>
+
+
+        </div>
+
+
+
+        <div class="mobile-menu" id="hamMenu" onclick="openNow()">
+
+
+            <ion-icon name="menu-outline"></ion-icon>
+
+
+        </div>
+
+        <div class="mobile-menu-close" id="closeMenu" onclick="close()">
+
+
+            <ion-icon name="close-outline"></ion-icon>
 
 
         </div>
