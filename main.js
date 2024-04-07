@@ -1,6 +1,5 @@
 let menuList = document.getElementById("menuList");
 let icon = document.getElementById("icon");
-let iconName = icon.getAttribute("name")
 
 // let hamMenu = document.getElementById("hamMenu");
 // console.log(hamMenu);
@@ -13,21 +12,27 @@ let iconName = icon.getAttribute("name")
 
 icon.addEventListener("click", ()=>{
     // console.log("okok")
-
+    let iconName = icon.getAttribute("name");
 
     if(iconName==="menu"){
-
-        icon.setAttribute("name", "close")
+       
+        icon.setAttribute("name", "close");
         menuList.style.display = "block";
+        menuList.style.top = "0";
+        // menuList.classList.toggle = "block"
 
-        // console.log("okok HEllo")
-        // iconName.valueOf = "close"
-        // console.log(iconName, "iconName"); 
+
         
-    }else{
-
+    }else if(iconName === "close"){
+        icon.setAttribute("name", "menu");
+        console.log(iconName,"okok close")
+        menuList.style.display = "none";
+        menuList.style.top = "-13rem";
         
        
+
+    }else{
+        icon.setAttribute("name", "close");
 
     }
 

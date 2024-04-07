@@ -99,6 +99,7 @@ p{
     font-weight: 500;
 
 
+
 }
 
 
@@ -134,6 +135,7 @@ ul li {
     z-index: 999;
     background-color: var(--black-color);
     min-width: 150px;
+    transition: all ease-in-out 600ms;
    
 }
 
@@ -271,7 +273,7 @@ ul li {
    
     border: 1 px solid red;
     width: 100%;
-    color: red;
+    color: rgb(180, 70, 70);
     display: flex;
     justify-content: center;
 }
@@ -365,18 +367,21 @@ ul li {
 
 @media only screen and (max-width : 375px){
 
-
+    
 
     .menu-list{
 
         /* display: none; */
         position: absolute;
         width: 100%;
-        top: 4rem;
+        top: -13rem;
         left: 0;
         right: 0;
         background-color: red;
         padding-bottom: 20px ;
+        z-index: 0;
+        transition: 1s;
+        
         
     }
 
