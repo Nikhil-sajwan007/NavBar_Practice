@@ -34,10 +34,6 @@ icon.addEventListener("click", ()=>{
 
 
 
-// function openNow(){
-//     
-// }
-
 
 
 
