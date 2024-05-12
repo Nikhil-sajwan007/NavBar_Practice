@@ -8,7 +8,7 @@ icon.addEventListener("click", ()=>{
     if(iconName==="menu"){
        
         icon.setAttribute("name", "close");
-        menuList.style.display = "block";
+        menuList.style.opacity = "1";
         menuList.style.top = "0";
         // menuList.classList.toggle = "block"
 
@@ -17,8 +17,8 @@ icon.addEventListener("click", ()=>{
     }else if(iconName === "close"){
         icon.setAttribute("name", "menu");
         // console.log(iconName,"okok close")
-        menuList.style.display = "none";
-        menuList.style.top = "-19rem";
+        menuList.style.opacity = "0";
+        menuList.style.top = "-20rem";
         
        
 

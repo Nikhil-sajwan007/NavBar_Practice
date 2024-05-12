@@ -13,7 +13,7 @@
     --black-color: #0c0c0c;
     --bg-color: #eeeeee;
     --btn-bg: #057ef9;
-    --dark-blue : #011931;
+    --dark-blue: #011931;
     --white: #fff;
     --heading-font: poppins, sans-serif;
 }
@@ -28,7 +28,7 @@ body {
 
 }
 
-h1{
+h1 {
 
     font-family: var(--heading-font);
     line-height: 1.4em;
@@ -38,9 +38,9 @@ h1{
 
 }
 
-h2{
+h2 {
 
-    
+
     font-family: var(--heading-font);
     line-height: 1.4em;
     font-weight: 600;
@@ -49,7 +49,7 @@ h2{
 }
 
 
-p{
+p {
 
     line-height: 1.6em;
     color: var(--white);
@@ -78,15 +78,16 @@ p{
     position: fixed;
     top: 0;
     z-index: 1000;
-    
-   
+
+
 }
 
 .logo {
 
     display: flex;
     align-items: center;
-    font-size: 1.6rem;}
+    font-size: 1.6rem;
+}
 
 .menu-list {
 
@@ -104,7 +105,7 @@ p{
 
 
 
-ul {
+.menu-list ul {
 
     display: flex;
     justify-content: flex-end;
@@ -118,10 +119,17 @@ ul li {
 }
 
 
-#dropDown{
+#dropDown {
 
-   
+
     cursor: pointer;
+    /* transition: 600ms all ease-in-out; */
+}
+
+#dropDown ul {
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
 }
 
 
@@ -129,36 +137,40 @@ ul li {
 
 #dropMenu {
 
-    display: none;
+    opacity: 0;
     position: absolute;
-    /* transition: display 0.3s ease; */
+    /* transition: display 3s ease; */
     z-index: 999;
     background-color: var(--black-color);
     min-width: 150px;
-    transition: all ease-in-out 600ms;
-   
+    transition: 0.4s all ease-in-out;
+
+
+
 }
 
-#dropMenu li{
+
+
+#dropMenu li {
 
     padding: 10px 15px;
     margin-top: 10px;
+
 }
 
 #dropMenu li a {
 
     text-decoration: none;
     color: var(--white);
-  
+
 }
 
 
-#dropDown:hover #dropMenu{
+#dropDown:hover #dropMenu {
 
-    display: block;
-   
-  
-    
+    opacity: 1;
+
+
 }
 
 
@@ -229,7 +241,7 @@ ul li {
     /* position: absolute;
     top: 0; */
 
-    /* margin-top: -30px;
+/* margin-top: -30px;
     width: 100%;
 
     background-image:  url(/img/Hero-banner01.jpg) , linear-gradient(to right, rgb(0, 0, 0.5), rgb(0, 0, 0.5));
@@ -268,9 +280,9 @@ ul li {
 /* USP start from here  */
 
 
-.master-container{
-    
-   
+.master-container {
+
+
     border: 1 px solid red;
     width: 100%;
     color: rgb(180, 70, 70);
@@ -278,7 +290,7 @@ ul li {
     justify-content: center;
 }
 
-.container-usp{
+.container-usp {
 
     width: 70%;
 
@@ -286,29 +298,30 @@ ul li {
 
 
 
-.d-flex{
+.d-flex {
 
     display: flex;
-   /* justify-content: space-between; */
-   justify-items: center;
-   gap: 20px;
-   margin-top: -110px;
+    /* justify-content: space-between; */
+    justify-items: center;
+    gap: 20px;
+    margin-top: -110px;
 }
 
-.item{
+.item {
 
     padding: 40px 30px;
     background-color: var(--black-color);
-    color : var(--white);
-    border-radius : 4px;
+    color: var(--white);
+    border-radius: 4px;
     text-align: center;
 }
 
-.item i{
+.item i {
 
     color: var(--white);
-}  */
+}
 
+*/
 
 /* text media section start from here 
 .text-media {
@@ -341,12 +354,12 @@ ul li {
 
 
 */
-.margin-20{
+.margin-20 {
 
     margin-top: 20px;
 }
 
-.mobile-menu{
+.mobile-menu {
 
     display: none;
 }
@@ -357,9 +370,6 @@ ul li {
 }
 
 
-.block{
+.block {
     display: block;
 }
-
-
-
