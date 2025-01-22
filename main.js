@@ -18,7 +18,7 @@ icon.addEventListener("click", ()=>{
         icon.setAttribute("name", "menu");
         // console.log(iconName,"okok close")
         menuList.style.opacity = "0";
-        menuList.style.top = "-20rem";
+        menuList.style.top = "-300px";
         
        
 
