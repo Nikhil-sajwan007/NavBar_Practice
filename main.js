@@ -9,7 +9,7 @@ icon.addEventListener("click", ()=>{
        
         icon.setAttribute("name", "close");
         menuList.style.opacity = "1";
-        menuList.style.top = "0";
+        menuList.style.top = "78px";
         // menuList.classList.toggle = "block"
 
 
